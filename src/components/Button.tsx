@@ -6,11 +6,9 @@ type ButtonPropsType = {
 }
 
 export const Button = ({callBack, name}:ButtonPropsType) => {
-    const onClickButtonHandler = ()=>{
-        callBack()
-    }
+
     return (
-        <button onClick={onClickButtonHandler}>
+        <button onClick={callBack}>
             {name}
         </button>
     );

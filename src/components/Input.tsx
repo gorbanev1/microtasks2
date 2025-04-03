@@ -10,7 +10,7 @@ export const Input = ({setTitle, title}:InputPropsType) => {
         setTitle(event.currentTarget.value)
     }
     return (
-        <Input onChange={onChangeInputHandler} value={title}/>
+        <input onChange={onChangeInputHandler} value={title}/>
     );
 };
 
